@@ -1,0 +1,44 @@
+
+  <nav class="navbar navbar-dark bg-primary">
+   <div class="container"> <a class="navbar-brand">SimpleApp</a> </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h3>Welcome to My SimpleApp</h3>
+    <p>Here you can register a task and then mark it as completed or delete the task</p>
+    <hr/>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="row">
+        <div class="col-md-6">
+           <!--<label>Add Task</label>-->
+           <input type="add" class="form-control" formControlName="description">
+        </div>
+
+      <div class="col-md-2">
+        <button type="submit" [disabled]="!form.get('description').valid"
+                class="btn btn-primary">Add</button>
+      </div>
+
+    </div>
+  </form>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <ol class="list-group">
+        <li *ngFor="let todoLocal of todos" class="list-group-item d-flex justify-content-between align-items-center">
+         <span class="{{todoLocal.done ? 'done' : ''}}">
+          {{todoLocal.description}} {{todoLocal.doneDate}}
+        </span>
+          <div class="btn-group">
+            <button class="btn btn-success" [disabled]="todoLocal.done" (click)="done(todoLocal)">Done</button>
+            <button class="btn btn-danger" (click)="delete(todoLocal)">Delete</button>
+          </div>
+
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</div>
