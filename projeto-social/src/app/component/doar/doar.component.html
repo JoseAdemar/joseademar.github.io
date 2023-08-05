@@ -1,0 +1,177 @@
+<div class="container-fluid">
+    <h3 style="text-align: center; margin-top: 20px;">Bem-vindo a nossa página de doação</h3>
+    <div class="alert alert-success" role="alert" id="alert" [hidden]="!mostrar">
+        Sua ajuda foi recebida com sucesso!
+    </div>
+    <form style="margin-top: 28px;">
+        <div class="row">
+            <div class="form-group col-md-5">
+                <label for="inputNomeCompleto">Nome completo:</label>
+                <input type="text" class="form-control" id="inputNomeCompleto" placeholder="Nome completo" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEmail">Email:</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Telefone:</label>
+                <input type="text" class="form-control" id="inputNumero" placeholder="numero" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-5">
+                <label for="inputAddress">Endereço:</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="endereço" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="cidade" required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputState">Estado</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Escolha...</option>
+                    <option>DF</option>
+                    <option>SP</option>
+                    <option>MG</option>
+                    <option>RS</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">CEP:</label>
+                <input type="text" class="form-control" id="inputZip" required>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <p style="font-weight: bolder;">Escolha os itens de doação</p>
+            <hr>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Arroz
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Feijão
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Macarrão
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Azeite
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Óleo de soja
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Molho de tomate
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Sal
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Fubá
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Leite em pó
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Biscoitos
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Sardinhas
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Açúcar
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Café
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Trigo
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group col-md-4">
+            <div class="">
+                <label class="col-md-4" for="" style="font-weight: bolder;">Data de recolhimento</label>
+                <input class="col-md-5" id="date" type="date">
+            </div>
+        </div>
+        <br><br>
+        <button class="btn btn-primary" (click)="mostrarDivAlert()" style="margin-bottom: 35px;"
+        type="submit">Enviar</button>
+    </form>
+</div>
